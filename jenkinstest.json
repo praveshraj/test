@@ -1,7 +1,7 @@
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
-        "MyFirstStack": {
+        "PrnFirstJenkinsStack": {
             "Type": "AWS::CloudFormation::Stack",            
             "Metadata": {
                 "AWS::CloudFormation::Designer": {
