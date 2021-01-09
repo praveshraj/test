@@ -1,18 +1,29 @@
 {
-    "AWSTemplateFormatVersion" : "2010-09-09",
-    "Resources" : {
-        "myStack" : {
-	       "Type" : "AWS::CloudFormation::Stack",
-	       "Properties" : {
-	        "TemplateURL" : "https://s3.amazonaws.com/cloudformation-templates-us-east-1/S3_Bucket.template",
-              "TimeoutInMinutes" : "60"
-	       }
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Metadata": {
+        "AWS::CloudFormation::Designer": {
+            "8ce7de95-78ce-4912-9bc8-917c913808c8": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 480.00390625,
+                    "y": 178.01171875
+                },
+                "z": 0
+            }
         }
     },
-    "Outputs": {
-       "StackRef": {"Value": { "Ref" : "myStack"}},
-       "OutputFromNestedStack" : {
-             "Value" : { "Fn::GetAtt" : [ "myStack", "Outputs.BucketName" ] }
-       }
+    "Resources": {
+        "MyFirstStack": {
+            "Type": "AWS::CloudFormation::Stack",
+            "Properties": {},
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "8ce7de95-78ce-4912-9bc8-917c913808c8"
+                }
+            }
+        }
     }
 }
