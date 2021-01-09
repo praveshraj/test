@@ -1,24 +1,8 @@
 {
     "AWSTemplateFormatVersion": "2010-09-09",
-    "Metadata": {
-        "AWS::CloudFormation::Designer": {
-            "8ce7de95-78ce-4912-9bc8-917c913808c8": {
-                "size": {
-                    "width": 60,
-                    "height": 60
-                },
-                "position": {
-                    "x": 480.00390625,
-                    "y": 178.01171875
-                },
-                "z": 0
-            }
-        }
-    },
     "Resources": {
         "MyFirstStack": {
-            "Type": "AWS::CloudFormation::Stack",
-            "Properties": {},
+            "Type": "AWS::CloudFormation::Stack",            
             "Metadata": {
                 "AWS::CloudFormation::Designer": {
                     "id": "8ce7de95-78ce-4912-9bc8-917c913808c8"
